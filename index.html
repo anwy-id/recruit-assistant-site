@@ -164,12 +164,12 @@
     .feature-card p{font-size:14px;color:var(--text-3);line-height:1.7}
 
     /* steps */
-    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
-    .steps::before{content:'';position:absolute;top:36px;left:12%;right:12%;height:2px;background:linear-gradient(90deg,var(--primary),var(--accent));opacity:.3;z-index:0}
-    .step{position:relative;z-index:1;text-align:center}
-    .step-num{width:72px;height:72px;margin:0 auto 22px;border-radius:50%;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:26px;font-weight:700;color:var(--accent);box-shadow:0 10px 34px rgba(15,45,90,.1)}
-    .step h3{font-size:18px;margin-bottom:8px}
-    .step p{font-size:14px;color:var(--text-3)}
+    .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;position:relative}
+    .steps::before{content:'';position:absolute;top:36px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,var(--primary),var(--accent));opacity:.3;z-index:0}
+    .step{position:relative;z-index:1;text-align:center;padding:0 4px}
+    .step-num{width:64px;height:64px;margin:0 auto 18px;border-radius:50%;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:24px;font-weight:700;color:var(--accent);box-shadow:0 10px 34px rgba(15,45,90,.1)}
+    .step h3{font-size:17px;margin-bottom:8px}
+    .step p{font-size:13.5px;color:var(--text-3);line-height:1.6}
 
     /* demo */
     .demo-card{background:linear-gradient(145deg,rgba(37,99,235,.05),rgba(14,165,233,.03));border:1px solid var(--border);border-radius:var(--radius);padding:36px;position:relative;overflow:hidden}
@@ -244,6 +244,10 @@
     footer .links a:hover{color:var(--text)}
 
     /* responsive */
+    @media (max-width:1280px){
+      .steps{grid-template-columns:repeat(3,1fr)}
+      .steps::before{display:none}
+    }
     @media (max-width:1024px){
       .hero .container{grid-template-columns:1fr}
       .hero-visual{min-height:420px;order:-1}
@@ -415,7 +419,7 @@
       <div class="steps reveal">
         <div class="step"><div class="step-num">1</div><h3>下载安装包</h3><p>点击下载 ZIP，解压得到「招聘速聊助手」文件夹。</p></div>
         <div class="step"><div class="step-num">2</div><h3>加载扩展</h3><p>打开 <code>chrome://extensions</code>，开启「开发者模式」，选择「加载已解压的扩展程序」。</p></div>
-        <div class="step"><div class="step-num">3</div><h3>登录账号</h3><p>点击工具栏插件图标，输入账号（个人工号）与初始密码（管理员分配）登录。账号问题请联系总部人力共享服务中心安文阳。</p></div>
+        <div class="step"><div class="step-num">3</div><h3>登录账号</h3><p>输入账号（个人工号）与初始密码登录。</p></div>
         <div class="step"><div class="step-num">4</div><h3>配置岗位</h3><p>在 BOSS直聘「推荐牛人」页点击插件图标，选择岗位并设置关键词/话术。</p></div>
         <div class="step"><div class="step-num">5</div><h3>一键运行</h3><p>点击「一键打招呼」，插件自动筛选、分析、打招呼，日志实时刷新。</p></div>
       </div>
