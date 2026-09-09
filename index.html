@@ -223,6 +223,12 @@
     .install-step code{background:rgba(37,99,235,.07);padding:3px 8px;border-radius:6px;font-family:var(--mono);font-size:12px;color:#1d4ed8}
 
     /* faq */
+    .risk-note{max-width:920px;margin:0 auto 44px;display:flex;gap:16px;align-items:flex-start;padding:20px 24px;background:linear-gradient(135deg,#fffbeb,#fff7ed);border:1px solid rgba(245,158,11,.28);border-left:4px solid #f59e0b;border-radius:var(--radius-sm);box-shadow:0 6px 24px rgba(245,158,11,.08)}
+    .risk-note .risk-icon{width:26px;height:26px;flex-shrink:0;color:#d97706;margin-top:1px}
+    .risk-note .risk-body{flex:1}
+    .risk-note .risk-title{font-size:15px;font-weight:700;color:#92400e;margin-bottom:6px;letter-spacing:.02em}
+    .risk-note .risk-text{font-size:14.5px;line-height:1.85;color:rgba(120,53,15,.9)}
+    .risk-note .risk-text strong{font-weight:700;color:#92400e}
     .faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
     .faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
     .faq-q{display:flex;justify-content:space-between;align-items:center;width:100%;padding:20px 24px;font-size:16px;font-weight:600;text-align:left;transition:background .2s}
@@ -506,6 +512,13 @@
 
   <section class="section" id="faq" style="background:rgba(37,99,235,.03)">
     <div class="container">
+      <div class="risk-note reveal">
+        <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <div class="risk-body">
+          <div class="risk-title">风险提示</div>
+          <div class="risk-text">由于 BOSS直聘 对于插件、外挂等招聘辅助工具的治理要求，在使用过程中<strong>可能触发网页端临时封号 1 天</strong>，<strong>APP 使用不受影响，次日将自动恢复</strong>。请合理安排使用节奏。</div>
+        </div>
+      </div>
       <div class="section-head reveal">
         <h2>常见问题</h2>
         <p>使用前你可能想知道这些。</p>
@@ -521,7 +534,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q">使用自动打招呼会被封号吗？<span class="icon"></span></button>
-          <div class="faq-a">插件内置了节奏控制与随机间隔，模拟人工操作；同时你可以自由设置每次打招呼的上限（1–200）并随时停止。但任何自动化工具都存在平台策略风险，建议合理控制频率，避免短时间内高频操作。</div>
+          <div class="faq-a">插件内置节奏控制与随机间隔，模拟人工操作；可自由设置每次打招呼上限（1–200）并随时停止。但由于 BOSS直聘 对插件、外挂等辅助工具的治理要求，仍<strong>可能触发网页端临时封号 1 天</strong>——<strong>APP 使用不受影响，次日自动恢复</strong>。建议合理控制频率，避免短时高频操作。</div>
         </div>
         <div class="faq-item">
           <button class="faq-q">我的数据会上传到哪里？<span class="icon"></span></button>
